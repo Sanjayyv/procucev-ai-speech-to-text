@@ -104,9 +104,11 @@ function Dashboard() {
       setElapsedTime(0);
       setRecordingStartTime(null);
       setStatus('connecting');
-
+      const WS_URL = import.meta.env.VITE_API_URL
+       .replace(/^http/, 'ws')
+       .replace('/api', '/ws');
       const socket = new WebSocket(
-        'ws://localhost:5000/ws/transcription'
+        `${WS_URL}/transcription`
       );
 
       socketRef.current = socket;
