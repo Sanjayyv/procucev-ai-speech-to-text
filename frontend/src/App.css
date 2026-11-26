@@ -1,0 +1,289 @@
+
+/* Main authentication layout */
+
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  background: #ffffff;
+}
+
+/* Left branding panel */
+
+.auth-brand-panel {
+  width: 44%;
+  min-height: 100vh;
+  padding: 45px 55px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(145deg, #172554 0%, #1e40af 55%, #2563eb 100%);
+  color: #ffffff;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-logo h5 {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.brand-logo span {
+  color: #93c5fd;
+}
+
+.brand-icon {
+  width: 43px;
+  height: 43px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.16);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-icon svg {
+  font-size: 28px;
+}
+
+.brand-content {
+  max-width: 440px;
+  margin: auto 0;
+}
+
+.brand-mic-icon {
+  width: 65px;
+  height: 65px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.14);
+  margin-bottom: 30px;
+}
+
+.brand-mic-icon svg {
+  font-size: 38px;
+}
+
+.brand-content h3 {
+  font-size: clamp(36px, 4vw, 50px);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -1.5px;
+  margin-bottom: 22px;
+}
+
+.brand-description {
+  color: #dbeafe;
+  font-size: 16px;
+  line-height: 1.8;
+  max-width: 400px;
+}
+
+.brand-features {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 35px;
+}
+
+.brand-features p {
+  color: #eff6ff;
+  font-size: 14px;
+}
+
+.brand-footer {
+  color: #bfdbfe;
+  font-size: 12px;
+}
+
+/* Right form panel */
+
+.auth-form-panel {
+  width: 56%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 45px 30px;
+  background: #ffffff;
+}
+
+.auth-form-wrapper {
+  width: 100%;
+  max-width: 430px;
+}
+
+.auth-heading {
+  font-weight: 700 !important;
+  color: #172554;
+  margin-bottom: 10px !important;
+  letter-spacing: -0.8px !important;
+}
+
+.auth-subheading {
+  color: #64748b;
+  font-size: 14px !important;
+  margin-bottom: 32px !important;
+}
+
+.field-label {
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  color: #334155;
+  margin-top: 19px !important;
+}
+
+.auth-form-wrapper .MuiTextField-root {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.auth-form-wrapper .MuiOutlinedInput-root {
+  border-radius: 9px;
+  background: #ffffff;
+}
+
+.auth-form-wrapper .MuiOutlinedInput-root fieldset {
+  border-color: #e2e8f0;
+}
+
+.auth-form-wrapper .MuiOutlinedInput-root:hover fieldset {
+  border-color: #94a3b8;
+}
+
+.auth-form-wrapper .MuiOutlinedInput-root.Mui-focused fieldset {
+  border-color: #2563eb;
+}
+
+.auth-form-wrapper .MuiOutlinedInput-input {
+  padding: 14px;
+  font-size: 14px;
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 24px;
+}
+
+.form-options .MuiFormControlLabel-label {
+  font-size: 13px;
+  color: #64748b;
+}
+
+.form-options .MuiCheckbox-root {
+  color: #94a3b8;
+}
+
+.form-options .MuiCheckbox-root.Mui-checked {
+  color: #2563eb;
+}
+
+.forgot-button {
+  text-transform: none !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  padding: 4px !important;
+}
+
+.auth-submit-button {
+  min-height: 48px;
+  border-radius: 9px !important;
+  background: #2563eb !important;
+  text-transform: none !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  box-shadow: none !important;
+  margin-top: 12px !important;
+}
+
+.auth-submit-button:hover {
+  background: #1d4ed8 !important;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2) !important;
+}
+
+.auth-bottom-text {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 13px;
+  color: #64748b;
+}
+
+.auth-bottom-text a {
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 3px;
+}
+
+.auth-bottom-text a:hover {
+  text-decoration: underline;
+}
+
+.mobile-brand {
+  display: none;
+}
+
+/* Responsive layout */
+
+@media (max-width: 900px) {
+  .auth-brand-panel {
+    width: 40%;
+    padding: 35px 25px;
+  }
+
+  .auth-form-panel {
+    width: 60%;
+  }
+
+  .brand-content h3 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 650px) {
+  .auth-container {
+    display: block;
+  }
+
+  .auth-brand-panel {
+    display: none;
+  }
+
+  .auth-form-panel {
+    width: 100%;
+    min-height: 100vh;
+    padding: 35px 22px;
+  }
+
+  .auth-form-wrapper {
+    max-width: 430px;
+  }
+
+  .mobile-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 45px;
+    color: #1e40af;
+  }
+
+  .mobile-brand svg {
+    font-size: 30px;
+  }
+
+  .mobile-brand h6 {
+    font-weight: 700;
+  }
+
+  .auth-heading {
+    font-size: 28px !important;
+  }
+}

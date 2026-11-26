@@ -1,0 +1,211 @@
+
+/* =========================================
+   GLOBAL RESPONSIVE STYLES
+========================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+  background: #f5f7fb;
+}
+
+img,
+svg {
+  max-width: 100%;
+}
+
+/* =========================================
+   DASHBOARD & HISTORY
+========================================= */
+
+.dashboard-container,
+.history-container {
+  width: 100%;
+  min-height: 100vh;
+  background: #f5f7fb;
+}
+
+.page-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 36px 24px;
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+
+.page-title {
+  font-size: 32px;
+  font-weight: 800;
+  color: #172033;
+  letter-spacing: -1px;
+}
+
+.page-description {
+  color: #64748b;
+  line-height: 1.6;
+}
+
+/* Dashboard cards */
+
+.dashboard-card,
+.history-card {
+  width: 100%;
+  min-width: 0;
+  border: 1px solid #e6eaf0;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 8px 30px rgba(15, 23, 42, 0.04);
+}
+
+.dashboard-card {
+  padding: 32px;
+  margin-bottom: 24px;
+}
+
+/* Transcription text */
+
+.transcription-content {
+  width: 100%;
+  min-height: 180px;
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+  line-height: 1.8;
+}
+
+/* History */
+
+.history-card {
+  padding: 24px;
+  margin-bottom: 16px;
+}
+
+.history-actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+  .page-content {
+    padding: 28px 20px;
+  }
+
+  .page-title {
+    font-size: 28px;
+  }
+
+  .dashboard-card {
+    padding: 26px;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  .page-content {
+    padding: 24px 16px;
+  }
+
+  .page-header {
+    align-items: flex-start;
+    margin-bottom: 22px;
+  }
+
+  .page-title {
+    font-size: 25px;
+    letter-spacing: -0.6px;
+  }
+
+  .page-description {
+    font-size: 13px;
+  }
+
+  .dashboard-card {
+    padding: 22px 16px;
+    border-radius: 14px;
+    margin-bottom: 18px;
+  }
+
+  .history-card {
+    padding: 18px 14px;
+    border-radius: 14px;
+  }
+
+  .history-actions {
+    flex-wrap: wrap;
+  }
+
+  .transcription-content {
+    min-height: 150px;
+    font-size: 14px;
+  }
+
+  .MuiDialog-paper {
+    margin: 12px !important;
+    width: calc(100% - 24px) !important;
+  }
+
+  .MuiDialogTitle-root {
+    font-size: 18px !important;
+  }
+
+  .MuiDialogContent-root {
+    padding: 16px !important;
+  }
+
+  .MuiButton-root {
+    max-width: 100%;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 380px) {
+  .page-content {
+    padding: 20px 12px;
+  }
+
+  .page-title {
+    font-size: 23px;
+  }
+
+  .dashboard-card {
+    padding: 18px 12px;
+  }
+
+  .history-card {
+    padding: 15px 12px;
+  }
+}
